@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>第四届梦想杯创业大赛在线报名</title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./enroll/moment.min.js"></script>
+	<script type="text/javascript" src="./enroll/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="./enroll/bootstrap-datetimepicker.zh-CN.js"></script>
+
+	<link rel="stylesheet" href="./enroll/bootstrap-datetimepicker.min.css" />
+</head>
+<body>
+<img src="./enroll/header.jpg" class="img-responsive" alt="headerr">
+<div class="well"><div class="container"><h3>第四届梦想杯创业大赛在线报名</h3></div></div>
+
+<div id="Layer1" style="position:fixed; width:100%; height:100%; z-index:-1">
+<img src="./enroll/backgound.jpg" height="100%" width="100%"/>
+</div>
+
+<div class="container container-fluid">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<form role="form" action="http://jlcycjh.com/cjh2017/index.php?c=form&amp;a=post&amp;modelid=8&amp;cid=" method="post">
+				<div class="col-md-6 column">
+				<div class="form-group">
+					<label for="name">姓名：</label>
+					<input class="form-control" name="data[name]" id="fine_name" type="name" />
+				</div>
+
+
+				<div class="col-md-4 column">
+				<div class="form-group">
+					<label for="name">性别：</label>
+					<div class="radio">
+						<label>
+							<input type="radio" name="data[sex]" id="sex" value="0" checked>男
+						</label>
+						<label>
+							<input type="radio" name="data[sex]" id="sex" value="1">女
+						</label>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-8 column">
+					<div class="form-group">
+							<label>出生日期：</label>
+							<div class='input-group date' id='datetimepicker1'>
+									<input type='text' name="data[birthday]" class="form-control" />
+									<span class="input-group-addon">
+											<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+							</div>
+					</div>
+					</div>
+
+				<div class="form-group">
+					<label for="idnumber">身份证号：</label>
+					<input class="form-control" name="data[idnumber]" id="idnumber" type="text" />
+				</div>
+
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input class="form-control" name="data[email]" id="email" type="email" />
+				</div>
+				<div class="form-group">
+					<label for="telnumber">联系电话：</label>
+					<input class="form-control" name="data[telnumber]" id="telnumber" type="telnumber" />
+				</div>
+
+				</div>
+				<div class="col-md-6 column">
+
+					<div class="form-group">
+						<label for="school">就读学校：</label>
+						<input class="form-control" name="data[school]" id="school" type="text" />
+					</div>
+					<div class="form-group">
+						<label for="major">所学专业：</label>
+						<input class="form-control" name="data[major]" id="major" type="text" />
+					</div>
+					<div class="form-group">
+						<label for="teacher">指导教师：</label>
+						<input class="form-control" name="data[teacher]" id="teacher" type="text" />
+					</div>
+					<div class="form-group">
+						<label for="optional">队名：</label>
+						<input class="form-control" name="data[optional]" id="optional" type="text" />
+					</div>
+
+					<div class="form-group">
+						<label for="grade">就读年级：</label>
+						<select id="fc_grade" class="form-control" name="data[grade]">
+							<option value="1" selected="selected">大一 </option>
+							<option value="2">大二 </option>
+							<option value="3">大三 </option>
+							<option value="4">大四 </option>
+						</select>
+					</div>
+
+				</div>
+
+			<div class="col-md-4 column"> </div>
+			<div class="col-md-4 column">
+				<input class="btn btn-primary btn-lg btn-block" value="提 交" name="submit" type="submit">
+			</div>
+			<div class="col-md-4 column"></div>
+
+			</form>
+		</div>
+	</div>
+</div>
+<hr/>
+
+</body>
+<script type="text/javascript">
+$(function () {
+		$('#datetimepicker1').datetimepicker({
+				format: 'YYYY-MM-DD',
+				locale: moment.locale('zh-cn')
+		});
+});
+</script>
+</html>
