@@ -63,7 +63,7 @@
 				</div>
 
 				<div class="form-group">
-					<label for="email">E-mail</label>
+					<label for="email">邮箱：</label>
 					<input class="form-control" name="data[email]" id="email" type="email" />
 				</div>
 				<div class="form-group">
@@ -75,6 +75,10 @@
 				<div class="col-md-6 column">
 
 					<div class="form-group">
+						<label for="optional">团队名称：</label>
+						<input class="form-control" name="data[optional]" id="optional" type="text" placeholder="可随意起" />
+					</div>
+					<div class="form-group">
 						<label for="school">就读学校：</label>
 						<input class="form-control" name="data[school]" id="school" type="text" />
 					</div>
@@ -83,15 +87,6 @@
 						<input class="form-control" name="data[major]" id="major" type="text" />
 					</div>
 					<div class="form-group">
-						<label for="teacher">指导教师：</label>
-						<input class="form-control" name="data[teacher]" id="teacher" type="text" />
-					</div>
-					<div class="form-group">
-						<label for="optional">队名：</label>
-						<input class="form-control" name="data[optional]" id="optional" type="text" />
-					</div>
-
-					<div class="form-group">
 						<label for="grade">就读年级：</label>
 						<select id="fc_grade" class="form-control" name="data[grade]">
 							<option value="1" selected="selected">大一 </option>
@@ -99,6 +94,10 @@
 							<option value="3">大三 </option>
 							<option value="4">大四 </option>
 						</select>
+					</div>
+					<div class="form-group">
+						<label for="teacher">指导教师：</label>
+						<input class="form-control" name="data[teacher]" id="teacher" type="text" placeholder="可不填" />
 					</div>
 
 				</div>
